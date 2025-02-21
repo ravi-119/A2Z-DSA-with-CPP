@@ -192,10 +192,32 @@ void print13(int n){
     }
 }
 
+
+void print14(int n){
+    for(int i = 0; i<=n-1; i++){
+        for(char ch = 'A'; ch<='A'+i; ch++){
+            cout<<ch<<" ";
+        }
+        cout<<endl;
+    }
+}
+
+// void print15(int n){
+//     for(int i = 0; i<=n; i++){
+//         for(char ch = 'A'; ch<='A'+(n-i-1); ch++ ){
+//             cout<<ch<<" ";
+//         }
+//         cout<<endl;
+//     }
+// }
+
+
+
+
 int main() {
     int n;
     cin>>n;
-    print13(n);
+    print15(n);
 }
 
 
