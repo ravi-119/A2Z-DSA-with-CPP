@@ -211,7 +211,6 @@ void print15(int n){
     }
 }
 
-
 void print16(int n){
     for(int i = 0; i<=n; i++){
         char ch = 'A'+i;
@@ -256,14 +255,54 @@ void print18(int n){
     }
 }
 
-void print19(){
-    
+void print19(int n){
+    // FirstHalf
+    int inis = 0;
+    for(int i = 0; i<n; i++){
+        // Stars
+        for(int j = 1; j<=n-i; j++){
+            cout<<"*";
+        }
+        // Spaces
+        for(int j = 0; j<inis; j++){
+            cout<<" ";
+        }
+        // Stars
+        for(int j = 1; j<=n-i; j++){
+            cout<<"*";
+        }
+        inis += 2;
+        cout<<endl;
+    }
+
+    // // Second Half
+    int iniS = 8;
+    for(int i = 1; i<=n; i++){
+        // Stars
+        for(int j = 1; j<=i; j++){
+            cout<<"*";
+        }
+        // Spaces
+        for(int j = 0; j<iniS; j++){
+            cout<<" ";
+        }
+        // Stars
+        for(int j = 1; j<=i; j++){
+            cout<<"*";
+        }
+        iniS -= 2;
+        cout<<endl;
+    }
+}
+
+void print20(){
+
 }
 
 int main() {
     int n;
     cin>>n;
-    print18(n);
+    print19(n);
 }
 
 
