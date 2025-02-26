@@ -350,7 +350,7 @@ void print22(int n){
 int main() {
     int n;
     cin>>n;
-    print22(n);
+    print7(n);
 }
 
 
