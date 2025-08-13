@@ -38,7 +38,7 @@
 class Solution {
     public:
       // Function to count the frequency of all elements from 1 to N in the array.
-      vector<int> frequencyCount(vvector<int>& nums, int k) {
+      vector<int> frequencyCount(vector<int>& nums, int k) {
           // code here
           long n = nums.size();
           sort(nums.begin(), nums.end());
@@ -60,3 +60,4 @@ class Solution {
 
         }
 };
+
