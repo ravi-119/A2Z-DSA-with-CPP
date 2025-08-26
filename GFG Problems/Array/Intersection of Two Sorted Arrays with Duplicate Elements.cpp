@@ -1,25 +1,24 @@
-// Intersection of two sorted arrays
-// Given two sorted arrays arr1[] and arr2[]. Your task is to return the intersection of both arrays.
-// Intersection of two arrays is said to be elements that are common in both arrays. The intersection should not count duplicate elements.
-// Note: If there is no intersection then return an empty array.
+// // Intersection of Two Sorted Arrays with Duplicate Elements
+// Given two sorted arrays a[] and b[], where each array may contain duplicate elements , the task is to return the elements in the intersection of the two arrays in sorted order.
 
+// Intersection of two arrays can be defined as the set containing distinct common elements that are present in both of the arrays.
 // Examples:
 
-// Input: arr1[] = [1, 2, 3, 4], arr2[] = [2, 4, 6, 7, 8]
-// Output: [2, 4]
-// Explanation: 2 and 4 are only common elements in both the arrays.
-// Input: arr1[] = [1, 2, 2, 3, 4], arr2[] = [2, 2, 4, 6, 7, 8]
-// Output: [2, 4]
-// Explanation: 2 and 4 are the only common elements.
-// Input: arr1[] = [1, 2], arr2[] = [3, 4]
+// Input: a[] = [1, 2, 3, 4, 5], b[] = [1, 2, 3, 6, 7]
+// Output: 1 2 3
+// Explanation: Distinct elements in both the arrays are: 1 2 3.
+// Input: a[] = [2, 2, 3, 4, 5], b[] = [1, 1, 2, 3, 4]
+// Output: 2 3 4
+// Explanation: Distinct elements in both the arrays are: 2 3 4.
+// Input: a[] = [1, 1, 1, 1, 1], b[] = [2, 2, 2, 2, 2]
 // Output: []
 // Explanation: No common elements.
 // Constraints:
-// 1 ≤ arr1.size(),arr2.size() ≤ 105
-// 1 ≤ arr1[i], arr2[i] ≤ 106
-
+// 1  <=  a.size(), b.size()  <=  105
+// -109  <=  a[i] , b[i]  <=  109
 
 // Solution 
+//Back-end complete function Template for C++
 class Solution {
   public:
     vector<int> intersection(vector<int> &arr1, vector<int> &arr2) {
